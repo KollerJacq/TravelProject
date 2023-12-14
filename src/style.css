@@ -1,13 +1,49 @@
-h1 {
+body {
+  background-color: rgb(231, 231, 231);
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../img/photo-1513635269975-59663e0ac1ad.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 200px 0;
+}
+header h1 {
   font-family: "Libre Baskerville", serif;
   font-weight: 900;
   font-size: 50px;
+  line-height: 1.5;
   text-align: left;
   margin-left: 130px;
 }
-p {
+header p {
   font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
   text-align: left;
   font-size: 16px;
   margin-left: 130px;
+  letter-spacing: 2px;
+}
+footer {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    line-height: 1;
+  }
+  header p {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1;
+  }
 }
