@@ -5,6 +5,14 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0auto;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../img/photo-1513635269975-59663e0ac1ad.avif");
@@ -30,8 +38,42 @@ header p {
   letter-spacing: 2px;
 }
 footer {
+  color: #fff;
   text-align: center;
   font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("/TravelProject/img/footer.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+footer h3 {
+  font-family: "Libre Baskerville", serif;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+footer a:hover {
+  cursor: pointer;
+  color: #006dfe;
+  text-decoration: underline;
+  opacity: 0.7;
 }
 @media (max-width: 768px) {
   header h1 {
