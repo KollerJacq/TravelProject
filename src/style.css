@@ -1,0 +1,13 @@
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 900;
+  font-size: 50px;
+  text-align: left;
+  margin-left: 130px;
+}
+p {
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 130px;
+}
