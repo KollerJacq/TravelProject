@@ -10,9 +10,12 @@ footer .grid {
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
+hr {
+  opacity: 0;
+}
 section {
-  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
@@ -92,8 +95,11 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
-main section {
+.section-1,
+.section-2 {
   background-color: #fff;
+}
+main div {
   border-radius: 2px;
 }
 main h2,
@@ -103,15 +109,16 @@ h3 {
   opacity: 0.8;
   padding: 20px 20px;
 }
-.gridImages {
+.grid-2-columns {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-.gridImg {
+.grid-3-columns {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -132,10 +139,12 @@ img.inspo {
 img.inspo:hover {
   transform: scale(1.1);
 }
+
 .history {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -151,4 +160,61 @@ img.inspo:hover {
 }
 .history p {
   font-family: "Quicksand", sans-serif;
+}
+section.food {
+  background-color: rgb(231, 231, 231);
+  font-family: "Quicksand", sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+.grid-4-columns {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.card {
+  background: #fff;
+  margin: 30px 0;
+  border-radius: 2px;
+  transition: all 150ms ease-in-out;
+}
+.card:hover {
+  transform: scale(1.2);
+}
+.card h4 {
+  margin-top: -15px;
+}
+.card p {
+  opacity: 0.7;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+.img-responsive {
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 14px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
