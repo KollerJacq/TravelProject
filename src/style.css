@@ -51,7 +51,7 @@ footer {
   text-align: center;
   font-family: "Quicksand", sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("/TravelProject/img/footer.avif");
+    url("/img/footer.avif");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
