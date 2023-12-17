@@ -5,10 +5,15 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-footer .grid {
+footer.grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+.footer-link:hover {
+  color: #509cff;
+  text-decoration: none;
+  font-weight: 900;
 }
 hr {
   opacity: 0;
@@ -78,23 +83,6 @@ footer a:hover {
   text-decoration: underline;
   opacity: 0.7;
 }
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 45px;
-    text-align: center;
-    margin: 0 0 50px 0;
-    line-height: 1;
-  }
-  header p {
-    font-size: 14px;
-    text-align: center;
-    margin: 10px 0;
-    line-height: 1;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
 .section-1,
 .section-2 {
   background-color: #fff;
@@ -160,6 +148,8 @@ img.inspo:hover {
 }
 .history p {
   font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding: 30px;
 }
 section.food {
   background-color: rgb(231, 231, 231);
@@ -171,7 +161,7 @@ section.food {
 .grid-4-columns {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
@@ -184,6 +174,7 @@ section.food {
 }
 .card:hover {
   transform: scale(1.2);
+  margin-top: 60px;
 }
 .card h4 {
   margin-top: -15px;
@@ -194,16 +185,28 @@ section.food {
   margin: 0;
   margin-bottom: 20px;
 }
+.card-header {
+  margin-top: 10px;
+}
+.card-header.grid-2-columns {
+  grid-gap: 0;
+}
 .card-body {
   padding: 30px;
 }
 .card-footer {
   padding: 0 30px 30px;
 }
+.embed {
+  width: 90%;
+  aspect-ratio: 1/1;
+  border-radius: 2px;
+}
 .img-responsive {
   max-width: 90%;
   margin: 0 auto;
   display: block;
+  border-radius: 2px;
 }
 .btn {
   display: block;
@@ -217,4 +220,44 @@ section.food {
   padding: 14px;
   background-color: #462cb3;
   text-decoration: none;
+}
+.recommendation {
+  margin-top: -70px;
+}
+.video {
+  border-radius: 2px;
+  width: 560px;
+  height: 315px;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    line-height: 1;
+  }
+  header p {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1;
+  }
+  .history p {
+    font-size: 14px;
+  }
+  section.grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-4-columns {
+    grid-template-columns: 1fr;
+  }
+  .card-header.grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+  .embed {
+    display: none;
+  }
+  .video {
+    width: 100%;
+  }
 }
